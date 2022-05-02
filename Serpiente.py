@@ -9,7 +9,7 @@ class Serpiente():
 
     def __init__(self, colorCabeza, colorSegmento):
         self.cabeza = turtle.Turtle()
-        self.cabeza.speed(0)
+        self.cabeza.speed(1)
         self.cabeza.shape('img/SnakeCafeUp.gif')
         self.cabeza.color(colorCabeza)
         self.cabeza.penup()
