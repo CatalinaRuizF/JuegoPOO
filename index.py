@@ -3,7 +3,7 @@
 import turtle
 import time
 import random
-import Game as g
+import Game2 as g
 import Screen as s
 import Serpiente as ser
 import Comida as c

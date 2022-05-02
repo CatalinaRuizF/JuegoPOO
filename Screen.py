@@ -37,6 +37,7 @@ class Screen():
         #Configuración de la Cuadricula si se desea mostrar, por defecto es False
         if cuadricula:
             ver = turtle.Turtle()
+            ver.penup()
             ver.speed(0)
             ver.hideturtle()
             ver.goto(-(self.lado/2)-10,-(self.lado/2)-10)
@@ -52,7 +53,8 @@ class Screen():
                 ver.forward(20)
                 ver.left(90)
 
-            hor = turtle.Turtle()
+            hor = turtle.Turtle() 
+            hor.penup()
             hor.speed(0)
             hor.hideturtle()
             hor.goto(-(self.lado/2)-10,-(self.lado/2)-10)
@@ -68,9 +70,11 @@ class Screen():
                 hor.right(90)
 
         arena = turtle.Turtle()
-        arena.speed(0)
+        arena.speed(0) 
+        arena.penup()
         arena.hideturtle()
         arena.goto(-(self.lado/2)-10,-(self.lado/2)-10)
+        arena.pendown()
         arena.color(colorBorde)
         for i in range(4):
             arena.forward(self.lado)
